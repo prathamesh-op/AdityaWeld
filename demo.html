@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Welding|Products</title>
+    <link rel="stylesheet" href="C:\Users\prathamesh\Desktop\Web development/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<style media="screen">
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.list{
+  list-style: none;
+  padding: 10px;
+font-size: 16px;
+display: inline-block;
+color: black;
+}
+
+list:hover {
+  text-decoration: underline;
+  color: black;
+ }
+
+ .big-container {
+   border-bottom: 1px solid lightgrey;
+   padding: 20px;
+ }
+
+ .column {
+   float: left;
+   width: 50%;
+   padding: 15px;
+ }
+
+
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ .imgcenter {
+   text-align: center;
+   padding: 15px;
+ }
+
+ @media screen and (max-width: 600px) {
+   .column {
+     width: 100%;
+   }
+ }
+
+ .proHead {
+   padding-bottom: 20px;
+   font-weight: bold;
+ }
+
+.tab-content{
+padding-top: 15px;
+padding-bottom: 10px;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: background-position 275ms ease;
+  background: linear-gradient(to right,red, midnightblue 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+
+.dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  transition: background-position 275ms ease;
+  background: linear-gradient(to right,green, purple 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+
+.sidebar a:hover, .dropdown-btn {
+  background-position: 0 100%;
+}
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+}
+
+.active1 {
+  background-color: green;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+</style>
+
+
+  </head>
+
+
+
+
+  <body>
+
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <a class="navbar-brand"><img src="images/logo.png" height="100" width="200"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Catalogue.html">Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Certification.html">Certification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="clear" style="margin-left:5px; width:100%; padding-left:20px;background-color:#FBFBFB; color:black;">
+      <ul>
+        <li class="list"> <a href="index.html">HOME </a></li>
+        <span>&#8608;</span>
+        <li class="list"> <a href="#">Products</a> </li>
+      </ul>
+
+    </div>
+
+    <section>
+      <img class="responsive" src="images/Catalogue.png" alt="Catalogue">
+    </section>
+
+<hr>
+
+    <div class="main">
+
+
+    <button onclick="openNav()" id="myBtn" data-toggle="offcanvas">☰ MORE PRODUCTS</button>
+      </div>
+    <div id="mySidebar" class="sidebar">
+      <br>
+      <a  href="#">Gas cutting/Welding torches</a>
+      <a  href="#">regulator</a>
+      <a  href="#">Gas Cutting/Welding torches(New)</a>
+      <button class="dropdown-btn">Regulator(New series)
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Medical Regulator</a>
+    <a href="#">Brass body Regulator</a>
+    <a href="#">Soda Fountain Regulator</a>
+  </div>
+      <a  href="#">valves</a>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-6 imgcenter">
+        <img src="images/ItemCode1.jpg" alt="itemcode1" height="300px" width="300px" class="img-fluid" style="border:1px solid grey;">
+        <p>
+          <strong>
+            <span style="color:black">Item Code:3012725459</span>
+          </strong>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <h3 class="proHead">GAS CUTTING BLOW PIPE</h3>
+        <p>Under the strict supervision of our experienced professionals, we are offering an innovative collection of Gas Cutting Blow Pipe. Our offered range is availed in a variety of sizes, dimensions and other such specifications to choose from.
+          The offered range is precisely designed at our highly advanced manufacturing unit following industry defined guidelines. The offered range can also be availed from us at the industry leading prices.</p>
+        <div class="container">
+          <ul class="nav nav-pills">
+
+            <li class="nav-item active">
+              <a class="nav-link active" data-toggle="tab" href="#model">Model</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#feature">Feature</a>
+            </li>
+          </ul>
+
+          <div class="tab-content clearfix active">
+            <div id="model" class="tab-pane fade show active">
+              <li> Model No.: ACT-3</li>
+              <li>Item: Gas Cutting Blow Pipe</li>
+              <li>Head: 90°</li>
+              <li>Nozzle for Propane: PNME</li>
+              <li>Nozzle for C2h2: ANME</li>
+            </div>
+            <div id="feature" class="tab-pane fade">
+              <li>Inlet Hose Connection G 3/8”-19 BSP. </li>
+              <li>Torch Head can be 90°.</li>
+              <li>Nozzle Mixing Technology.</li>
+              <li>No Backfire.</li>
+              <li>Angle Head Forged from brass rods provides longer life.</li>
+              <li>Tubes for 0 2 & Fuel Gas :Seamless Stainless Steel.</li>
+              <li>Knobs: Metallic-better grip, longer life.</li>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+<hr>
+
+    <div class="container">
+
+    <div class="row">
+      <div class="col-sm-6 imgcenter">
+        <img src="images/ItemCode2.jpg" alt="itemcode2" height="300px" width="300px" class="img-fluid" style="border:1px solid grey;">
+        <p>
+          <strong>
+            <span style="color:black">Item Code:3012729001-21(90º Head) Cutter Length 21"<br>
+              3012729001-24(90º Head) Cutter Length 24"<br>
+              3012729010-21(180º Head) Cutter Length 21"<br>
+              3012729010-24(180º Head) Cutter Length 24"<br>
+              3012729010-36(180º Head) Cutter Length 36"<br>
+              3012729010-48(180º Head) Cutter Length 48"<br>
+              3012729010-52(180º Head) Cutter Length 52"<br>
+              3012729010-62(180º Head) Cutter Length 62"<br>
+              3012729010-72(180º Head) Cutter Length 72"<br>
+            </span>
+          </strong>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <h3 class="proHead">GAS CUTTING BLOW PIPE</h3>
+        <p>Our reputation in the market is largely attributable to our precision-designed Gas Cutting Blow Pipe from our extensive collection of products. This torch is manufactured using excellent quality raw material and latest technology by our
+          skilled professionals. In order to ensure quality, this torch is are stringently tested on various parameters by our experts. Apart from this, remarkable quality and sturdy structure increase the demand of our offered range in the market.
+        </p>
+        <div class="container2">
+          <ul class="nav nav-pills">
+
+            <li class="nav-item active">
+              <a class="nav-link active" data-toggle="tab" href="#model1">Model</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#feature1">Feature</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="model1" class="tab-pane fade show active">
+              <li> Model No.: ACT-3</li>
+              <li>Item: Gas Cutting Blow Pipe</li>
+              <li>Head: 90°</li>
+              <li>Nozzle for Propane: PNME</li>
+              <li>Nozzle for C2h2: ANME</li>
+            </div>
+            <div id="feature1" class="tab-pane fade">
+              <li>Confirms to IS 7653:1975.</li>
+              <li>Body & Head Forged Brass.</li>
+              <li>Inlet Hose Connection G 3/8”-19 BSP.</li>
+              <li>Suitable for Acetylene & Propane nozzle.</li>
+              <li>Injector Type.</li>
+              <li>Cutting up to 300 mm mild steel.</li>
+              <li>Length of torch can be increased on customer demand.</li>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+<hr>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-6 imgcenter">
+          <img src="images/ItemCode3.jpg" alt="itemcode3" height="300px" width="300px" class="img-fluid" style="border:1px solid grey;">
+          <p>
+            <strong>
+              <span style="color:black">Item Code:3012729003
+              </span>
+            </strong>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3 class="proHead">PUG MACHINE CUTTING BLOW PIPE</h3>
+          <p>Riding on unfathomable volumes of industrial expertise, we are offering an excellent range of PUG Cutter Being a quality-oriented organization, we assure our clients that these products are the best in quality. Our skilled professionals
+            only utilize fine quality raw material, while manufacturing the entire range. Moreover, our offered range can be availed in a wide range of sizes and shapes, as per the requirements of our esteemed clients.</p>
+          <div class="container2">
+            <ul class="nav nav-pills">
+
+              <li class="nav-item active">
+                <a class="nav-link active" data-toggle="tab" href="#model2">Model</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#feature2">Feature</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="model2" class="tab-pane fade show active">
+                <li>Model No.: ACT-2</li>
+                <li>Item: PUG Cutter</li>
+                <li>Cutting Thickness(nm): 5-60</li>
+                <li>Straight Cutting(nm): 1800</li>
+                <li>Circle Cutting(nm): 30-2400</li>
+                <li>Bavels: 0°-45°</li>
+                <li>Bavels Shape: I,V,Y</li>
+              </div>
+              <div id="feature2" class="tab-pane fade">
+                <li>Circle Cutting: Recommended ID 50-2400 mm.</li>
+                <li>Gas Connection: M12 x 1 for O2 & C2H2 RH & LH respectiely.</li>
+                <li>Cutting Speed: 80-100 mm/min. (50Hz) 100-1000 mm/min. (60HZ).</li>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+<hr>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-6 imgcenter">
+          <img src="images/ItemCode4.jpg" alt="itemcode4" height="300px" width="300px" class="img-fluid" style="border:1px solid grey;">
+          <p>
+            <strong>
+              <span style="color:black">Item Code:3012729004(Gas Welding Torch Big)<br>
+
+                    3012729005(Gas Welding Torch Small)
+              </span>
+            </strong>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h3 class="proHead">GAS WELDING TORCH</h3>
+          <p>Riding on unfathomable volumes of industrial expertise, we are offering an excellent range of PUG Cutter Being a quality-oriented organization, we assure our clients that these products are the best in quality. Our skilled professionals
+            only utilize fine quality raw material, while manufacturing the entire range. Moreover, our offered range can be availed in a wide range of sizes and shapes, as per the requirements of our esteemed clients.</p>
+          <div class="container2">
+            <ul class="nav nav-pills">
+              <li class="nav-item ">
+                <a class="nav-link active" data-toggle="tab" href="#feature3">Feature</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+
+              <div id="feature3" class="tab-pane fade show active">
+            <li>Forged Brass Shank.</li>
+            <li>Heavy Duty.</li>
+            <li>Weld mild Steel up to 8.5 mm thickness.</li>
+            <li>Control Knob red for Acetylene & blue for Oxygen</li>
+            <li>Tips Swaged Copper.</li>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop >700 || document.documentElement.scrollTop > 700) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function openNav() {
+      var x = document.getElementById("mySidebar");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+
+        } else {
+          x.style.display = "none";
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+    }
+
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+    </script>
+  </body>
+</html>

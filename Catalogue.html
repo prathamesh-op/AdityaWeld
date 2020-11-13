@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Welding|Catalogue</title>
+  <link rel="stylesheet" href="C:\Users\prathamesh\Desktop\Web development/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <style>
+    .container {
+      padding: 30px;
+    }
+
+    .row {
+      text-align: center;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=email] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #aaa;
+      transition: 3s;
+    }
+
+    input[type=text]:focus {
+      border-color: dodgerBlue;
+      box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    input[type=tel]:focus {
+      border-color: dodgerBlue;
+      box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    input[type=email]:focus {
+      border-color: dodgerBlue;
+      box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    .btn {
+      margin: 20px;
+    }
+
+    .imgcenter {
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <header>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand"><img src="images/logo.png" height="100" width="200"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapse_target">
+
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="Catalogue.html">Catalogue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Certification.html">Certification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="clear" style="margin-left:5px; width:100%; padding-left:20px;background-color:#FBFBFB; color:black;">
+    <ul>
+      <li class="list"> <a href="index.html">HOME </a></li>
+      <span>&#8608;</span>
+      <li class="list"> <a href="#">Catalogue</a> </li>
+    </ul>
+
+  </div>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 imgcenter">
+          <img src="images/Catalogue1.jpg" alt="Catalogue" height="400" width=100%>
+        </div>
+        <div class="col-sm-6">
+          <h3>CATALOGUE</h3>
+          <form class="" method="post">
+            <label for="">Name</label><br>
+            <input type="text" name="name" value="" placeholder="Your Full Name and Surname" required minlength="6" maxlength="30"><br>
+            <label for="">Email</label><br>
+            <input type="email" name="email" value="" placeholder="name@domain.co.in" required><br>
+            <label for="">Office Tel</label><br>
+            <input type="tel" name="tel" value="" placeholder="Your Offic Telephone Number" required><br>
+            <label for="">Mobile</label><br>
+            <input type="tel" name="mob" value="" placeholder="Your Number" required><br>
+            <label for="">Company Name</label><br>
+            <input type="text" name="company_name" value="" placeholder="Company Name" required><br>
+            <label for="">Company Location</label><br>
+            <input type="text" name="Company_loc" value="" placeholder="eg:Mumbai" required><br>
+
+            <button type="submit" class="btn btn-success" name="button" style="width:240px;height:40px;">SEND ENQUIRY</button>
+
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="tm-footer bg-dark">
+    <div class="">
+      <h3 id="foot">AdityaWELDING</h3>
+    </div>
+    <div class="tm-navfoot">
+      <nav class="tm-nav">
+        <ul class="menu-bar">
+          <li><a href="index.html" data-toggle="collapse">Home</a></li>
+          <li><a href="about.html" data-toggle="collapse">About Us</a></li>
+          <li><a href="Products.html" data-toggle="collapse">Products</a></li>
+          <li><a href="Catalogue.html" data-toggle="collapse">Catalogue</a></li>
+          <li><a href="Certification.html" data-toggle="collapse">Certification</a></li>
+          <li><a href="Contact.html" data-toggle="collapse">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="icon">
+      <a href="#">
+        <i class="fa fa-1.5x fa-facebook"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-1.5x fa-instagram"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-1.5x fa-twitter"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-1.5x fa-linkedin"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-1.5x fa-google"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa fa-1.5x fa-vk"></i>
+      </a>
+
+    </div>
+
+    <h6 id="head4">copyright &copy; 2020 - All Rights Reserved - Ashaweld.com</h6>
+
+  </footer>
+
+</body>
+
+</html>
